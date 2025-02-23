@@ -1,7 +1,9 @@
 # **Examcrypt: A Cryptographic Exam Protection System**  
 
 ## **Overview**  
-Examcrypt is a cryptographic system designed to **secure exam questions and answers** using **AES encryption, Shamir’s Secret Sharing, and Public-Key Cryptography**. This project ensures that exam questions are encrypted, securely stored, and can only be accessed by authorized individuals.  
+Examcrypt is a cryptographic system designed to **secure exam questions and answers** using **AES encryption, Shamir’s Secret Sharing, and Public-Key Cryptography**. This project ensures that exam questions are encrypted, securely stored, and can only be accessed by authorized individuals.
+
+**ExamCrypt** is a secure and cryptography-powered examination system designed to protect the integrity of digital exams by ensuring confidentiality, authenticity, and controlled access to exam content. The system leverages **AES-256 encryption** to encrypt exam questions, preventing unauthorized access. To regulate the timing of question availability, it implements **time-lock puzzles**, ensuring that questions can only be decrypted after a specific time. Additionally, **Shamir’s Secret Sharing** is used to distribute encryption keys among multiple examiners, preventing a single point of failure in key management. The project also incorporates **public-key cryptography** using Solana’s web3.js and TweetNaCl to verify the authenticity of exam data and digitally sign communications. With these techniques combined, **ExamCrypt** provides a robust and tamper-proof environment for conducting secure online examinations. 🚀
 
 ## **Features**  
 -> AES-256 encryption for exam questions and options  
@@ -23,26 +25,6 @@ exam-crypto-main/
 ```
 
 ---
-
-## **Installation Guide**  
-### **Step 1: Clone the Repository**  
-```sh
-git clone https://github.com/your-username/SecureExam.git
-cd SecureExam
-```
-
-### **Step 2: Install Dependencies**  
-```sh
-npm install
-```
-
-For TypeScript support, install `ts-node` globally:  
-```sh
-npm install -g ts-node
-```
-
----
-
 ## **Workflow**  
 ### **1️⃣ AES Encryption (1-examiner-problem-encryptor)**  
 - Encrypts exam questions and multiple-choice options using **AES-256-CBC**.  
